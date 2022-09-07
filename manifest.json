@@ -1,0 +1,14 @@
+{
+    "name": "FTEM",
+    "start_url": ".",
+    "background_color": "#151515",
+    "theme_color": "#ffffff",
+    "display": "standalone",
+    "icons":[
+        {
+            "src": "/MIC Hackathon/Logo.png",
+            "sizes": "500x250",
+            "type": "image/png"
+        }
+    ]
+}

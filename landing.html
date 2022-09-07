@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="stylesheet" href="/MIC Hackathon/styles2.css">
+    <link rel="manifest" href="/MIC Hackathon/manifest.json">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.8.0/dist/leaflet.css"
+    integrity="sha512-hoalWLoI8r4UszCkZ5kL8vayOGVae1oxXe/2A4AO6J9+580uKHDO3JdHb7NzwwzK5xr/Fs0W40kiNHxM9vyTtQ=="
+    crossorigin="" />
+<style>
+    /* GOOGLE MAPS Styling */
+    .mapWrapper {
+        width: 100%;
+    }
+
+    .mapWrapper iframe {
+        width: 100%;
+    }
+
+    #map {
+        width: 100%;
+    height: 25em;
+    border: 3px solid #ccc;
+    border-radius: 10px;
+    box-sizing: border-box;
+    display: block;
+    margin: 1em;
+    }
+</style>
+    <title> Track Field Employee Movement</title>
+</head>
+<body onload="single_instance_func()">
+<nav class="wrapper">
+    <img src="/MIC Hackathon/Logo.png" id="logo" class="responsive">
+    <p>   
+    <Employee class="heading">Employee Details:</Employee><br>
+    <p id="here1"></p>
+    <p id="here"></p>
+    </p><br>
+    <div class="mapWrapper">
+        <div id="map"></div>
+    </div>
+
+    <script src="https://unpkg.com/leaflet@1.8.0/dist/leaflet.js"
+        integrity="sha512-BB3hKbKWOc9Ez/TAwyWxNXeoV9c1v6FIeYiBieIWkpLjauysF18NzgR1MBNBXf8/KABdlkX68nAhlwcDFLGPCQ=="
+        crossorigin=""></script>
+    <script src="testjs.js"></script><br>
+<cen id="ali">Initial Co-ordinates & Time</cen>
+<div>
+    <p id="p3"></p>
+    <span id="p4"></span>
+</div>
+<cen id="ali">Final Co-ordinates & Time</cen>  
+<div>
+        <p id="p1"></p>
+    <span id="p2"></span>
+</div>
+<cen id="p5"></cen><br>
+<button onclick="clearInterval(myInterval)">Stop</button><br><button><a href="/MIC Hackathon/index.html">Back</a></button>
+<script src="/MIC Hackathon/index2.js"></script>
+</p> 
+</nav>
+</body>
+</html>
