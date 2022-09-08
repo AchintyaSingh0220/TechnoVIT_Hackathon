@@ -1,10 +1,12 @@
 body {
     background-color: #151515;
 }
+
 .wrapper {
     margin: 0 auto;
     width: 25em;
 }
+
 p {
     margin: 0;
     color: #fff;
@@ -13,6 +15,7 @@ p {
     padding-left: 1em;
     font-weight: 0;
 }
+
 button {
     margin: 0;
     color: #fff;
@@ -30,19 +33,22 @@ button {
     margin-right: auto;
     background-color: #151515;
 }
-.responsive {  
+
+.responsive {
     width: 35%;
     padding: 0.7em;
     height: auto;
     display: block;
     margin-right: auto;
 }
+
 .heading {
     margin: 0;
     color: #fff;
     font-family: Bebas Neue;
     font-size: 1.3em;
 }
+
 .map {
     width: 100%;
     height: 1em;
@@ -51,10 +57,12 @@ button {
     box-sizing: border-box;
     display: block;
 }
+
 div {
     display: flex;
     justify-content: space-between;
 }
+
 span {
     margin: 0;
     color: #fff;
@@ -65,6 +73,7 @@ span {
     text-align: center;
     font-style: normal;
 }
+
 cen {
     margin: 0;
     color: #fff;
@@ -74,10 +83,12 @@ cen {
     display: block;
     text-align: center;
 }
+
 .wrapper2 {
     margin: 0 auto;
     width: 10em;
 }
+
 a {
     color: #fff;
     text-decoration: none;

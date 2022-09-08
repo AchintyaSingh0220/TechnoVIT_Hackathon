@@ -7,7 +7,9 @@ body {
     margin: 0 auto;
     width: 30em;
 }
-input[type=text], select {
+
+input[type=text],
+select {
     width: 60%;
     padding: 3px 5px;
     display: block;
@@ -23,6 +25,7 @@ input[type=text], select {
     color: #fff;
     background-color: #151515;
 }
+
 p {
     margin: 0;
     color: #fff;
@@ -30,6 +33,7 @@ p {
     font-size: 1.8em;
     text-align: center;
 }
+
 button {
     margin: 0;
     color: #fff;
@@ -46,7 +50,8 @@ button {
     margin-right: auto;
     background-color: #151515;
 }
-.responsive {  
+
+.responsive {
     width: 65%;
     height: auto;
     display: block;

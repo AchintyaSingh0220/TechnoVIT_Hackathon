@@ -19,10 +19,7 @@ function transision() {
     });
     if (x) {
         window.localStorage.setItem("name", s);
-        window.open("/MIC Hackathon/landing.html", "_top");
-        // url = '/MIC Hackathon/landing.html?name=' + encodeURIComponent(s);
-
-        // document.location.href = url;
+        window.open("landing.html", "_top");
     }
     else {
         alert("Enter correct ID!");
