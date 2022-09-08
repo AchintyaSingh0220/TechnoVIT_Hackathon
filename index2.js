@@ -13,8 +13,7 @@ document.getElementById("here").innerHTML = window.localStorage.getItem("name");
 var s = window.localStorage.getItem("name");
 document.getElementById("here1").innerHTML = employee.get(s);
 
-
-//create a map in the "map" div, set the view to a given place and zoom
+// create a map in the "map" div, set the view to a given place and zoom
 var map = L.map('map').setView([13.082792, 80.270742], 10);
 
 /* to change the location of the map change the lat and long, here 40.717192,-74.012042.
@@ -30,6 +29,7 @@ L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
 var prevLat = 0;
 var prevLong = 0;
 var dist_sum = 0;
+var init_time = 0;
 
 function single_instance_func() {
     const today = new Date();
@@ -37,6 +37,8 @@ function single_instance_func() {
     document.getElementById("p3").innerHTML = time;
 
     getLocation_single();
+
+    init_time = (today.getHours() * 3600) + (today.getMinutes() * 60) + (today.getSeconds());
 }
 
 
@@ -95,8 +97,23 @@ function showPosition(position) {
 }
 
 function stop_trace() {
-    document.getElementById("trace_follow").innerHTML = "Final Destination";
     clearInterval(myInterval);
+
+    const today = new Date();
+
+    var time_sum = (today.getHours() * 3600) + (today.getMinutes() * 60) + today.getSeconds();
+    time_sum = time_sum - init_time;
+
+    var hour = Math.floor(time_sum / 3600);
+    var minute = Math.floor((time_sum - hour * 3600) / 60);
+    var seconds = time_sum - (hour * 3600 + minute * 60);
+    if (hour < 10)
+        hour = "0" + hour;
+    if (minute < 10)
+        minute = "0" + minute;
+    if (seconds < 10)
+        seconds = "0" + seconds;
+    document.getElementById("p6").innerHTML = "Total Time elapsed: " + hour + ":" + minute + ":" + seconds;
 }
 
 function distance(lat1, lon1, lat2, lon2) {
